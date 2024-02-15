@@ -1,0 +1,31 @@
+:root {
+  --grid-container-width: 960px;
+  --grid-container-height: 960px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#grid-container {
+  box-sizing:initial;
+  border: 1px solid red;
+  margin: 100px auto;
+  width: 960px;
+  height: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-tile {
+  border: 1px solid rgb(95, 95, 95);
+}
+
+.grid-tile:hover {
+  background-color: black;
+}
