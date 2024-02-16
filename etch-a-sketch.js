@@ -12,11 +12,16 @@ const createGrid = (resolution) => {
       gridTile.setAttribute("class", "grid-tile");
       gridTile.style.width = tileSize;
       gridTile.style.height = tileSize;
-      
     }
+    const tilesArray = Array.from(gridContainer.childNodes);
+    tilesArray.forEach(element => {
+    element.addEventListener("mouseover", () => {
+    element.style.backgroundColor = "black"
+      });
+    });
   }
 
-//Function for resolution change
+//Function for grid resolution change
 resolutionBtn.addEventListener("click", () => {
   while (gridContainer.hasChildNodes()) {
     gridContainer.removeChild(gridContainer.firstChild);
@@ -26,5 +31,3 @@ resolutionBtn.addEventListener("click", () => {
 });
 
 createGrid(16);
-
-  
