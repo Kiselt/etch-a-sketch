@@ -5,13 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Etch-a-Sketch</title>
   <link rel="stylesheet" href="etch-a-sketch.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <button id="resolution">Sketchpad Resolution</button>
+  
+  <div class="grid-wrapper">
+    <h1>Etch-a-Sketch</h1>
+    
+    <div id="grid-container"></div>
+    <div id="button-wrapper">
+      <button id="resolution">Sketchpad Resolution</button>
 
-  <button id="random-color">Random Color</button>
+      <button id="random-color">Random Color</button>
+      <button id="clear-sketch">Clear Sketchpad</button>
+    </div>
 
-  <div id="grid-container"></div>
+  </div>
   
   <script src="etch-a-sketch.js"></script>
 </body>
