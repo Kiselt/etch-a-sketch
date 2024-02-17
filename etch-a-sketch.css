@@ -37,6 +37,10 @@ button {
   margin: 0 20px;
 }
 
+button:hover {
+  background-color: #9c75f1;
+}
+
 #button-wrapper {
   margin: 40px;
   display: flex;
